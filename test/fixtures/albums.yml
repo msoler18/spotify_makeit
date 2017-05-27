@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  artist: one
-  song: one
+  name: MyString
+  image_url: MyString
+  released_at: 2017-05-27
 
 two:
-  artist: two
-  song: two
+  name: MyString
+  image_url: MyString
+  released_at: 2017-05-27
