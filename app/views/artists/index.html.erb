@@ -1,0 +1,13 @@
+<table border="0" style="width:100%" align="center">
+  <tr>
+    <td colspan="3" style="background:black;height:15px"><h1 style="color:white" align="center">Listado de artistas</h1></td>
+  </tr>
+  <tr>
+    <td colspan="3" style="height:10px"></td>
+  </tr>
+  <tr>
+  	<% @artists.each do |artist|%>
+    	<td><img src="<%=artist.image_url%>" width="200px" height="200px"><br><h3><%=artist.name%></h3><br><h3><%= link_to "View more", artist %></h3></td> 
+    	<% end %>
+  </tr>
+</table>

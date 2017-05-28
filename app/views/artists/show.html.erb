@@ -1,0 +1,9 @@
+<h1><%= @artist.name %></h1>
+<h2>Albums (<%= @artist.albums.count %>)</h2>
+<table border="0" style="width:100%" align="center">
+  <tr>
+  	<% @artist.albums.each do |info|%>
+    	<td><img src="<%=info.image_url%>" width="200px" height="200px"><br><h3><%=info.name%></h3><br><h3><%= info.released_at %></h3></td> 
+    	<% end %>
+  </tr>
+</table>
